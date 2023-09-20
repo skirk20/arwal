@@ -1,0 +1,52 @@
+:root {
+    // Base
+    --backgroundColor: #6ac5ef;
+
+    --baseColor: #6ac5ef;
+    --secondColor: #707070;
+
+    --quizTaskColor: #b4e2f7;
+    --textColor: #6237a0;
+    --textOnBaseColor: #ffffff;
+    --textOnSecondColor: #ffffff;
+
+    --baseFont: 'Montserrat', sans-serif;
+
+    --separatorColor: #e1e1e1;
+
+
+    // Buttons
+    --buttonFont: var(--baseFont);
+    --buttonPadding: .2em .7em;
+    //  - primary
+    --buttonBackground: var(--baseColor);
+    --buttonText: var(--textOnBaseColor);
+    --buttonBorder: 3px solid var(--baseColor);
+    --buttonBorderRadius: 10px;
+    --buttonMargin: 2px ;
+    //  - :hover
+    --buttonHoverBackground: var(--secondColor);
+    --buttonHoverText: var(--textOnBaseColor);
+    --buttonHoverBorder: 3px solid var(--secondColor);
+    --buttonBorderInsideRadius: 5px;
+    --buttonHoverBorderRadius: 10px;
+
+
+    //  - inverted
+    --buttonInvertedBackground: var(--backgroundColor);
+    --buttonInvertedText: var(--baseColor);
+    --buttonInvertedBorder: 3px solid var(--baseColor);
+    --buttonInvertedBorderRadius: 1em;
+    //  - :hover
+    --buttonInvertedHoverBackground: var(--backgroundColor);
+    --buttonInvertedHoverText: var(--secondColor);
+    --buttonInvertedHoverBorder: 3px solid var(--secondColor);
+    --buttonInvertedHoverBorderRadius: 15px;
+
+    // <Label>
+    --labelTextColor: #aaaaaa;
+
+    //quizButtons
+    --quizButtonBackground: #efe5f5;
+    --spanBackground: #e1d9ec
+}

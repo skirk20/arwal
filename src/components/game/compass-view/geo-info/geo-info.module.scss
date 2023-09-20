@@ -1,0 +1,39 @@
+.geoInfo {
+    background: white;
+    border-radius: 5rem;
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    @media (max-width: 1200px) {
+        border-radius: 0;
+        border-top: 10px solid var(--color3);
+
+        .inner {
+            padding: 4rem 2rem 1rem;
+        }
+    }
+}
+
+.inner {
+    // padding-top: 2em;
+    padding: 14rem 6rem 9rem;
+    background: url(../../../../assets/buttonRide.png) 50% 4rem no-repeat;
+    background-size: auto 6rem;
+
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+
+    font-weight: bold;
+}
