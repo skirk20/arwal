@@ -46,6 +46,7 @@ export default function HomePage() {
                 </ButtonLike>
             }
         </nav>
+        <p className={styles.errorMessege}>Proszę obrócić urządzenie</p>
         <PageFooter />
     </div>
 }
