@@ -1,7 +1,6 @@
 import * as PIXI from 'pixi.js';
 import { ItemData } from '../types';
 import Target from './target';
-import { LineStyle } from '@material-ui/icons';
 
 export class GameImage extends PIXI.Container {
     events = new PIXI.utils.EventEmitter();

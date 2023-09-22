@@ -3,9 +3,6 @@ import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import { getHomeRoute, getGamePageRoute, getRulesPageRoute, getPolicyRoute, getTaskZero, getQuizOne, getQuizTwo, getRide } from './routes/routes';
 import React, { Suspense } from 'react';
 import { Loader } from './molecules/loader/loader';
-import { PageHeader } from './components/layout/header/page-header';
-import { useMainModuleState } from './modules/main';
-import { PageFooter } from './components/layout/footer/page-footer';
 import PolicyPage from './routes/policy';
 import { useEffect } from 'react';
 import { CONFIG_MODULE_ACTION, useConfigModuleDispatch } from './modules/config';
@@ -20,8 +17,6 @@ const QuizTwo = React.lazy(() => import('./routes/quiz-2/quiz'));
 const Ride = React.lazy(() => import('./routes/ride/ride'));
 
 export default function App() {
-    // window.location.reload()
-    const { showHeader } = useMainModuleState();
 
     return (
         <>

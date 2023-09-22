@@ -4,12 +4,6 @@ export const SCENARIO: GameScenario = {
     startStep: '1.1',
     steps: [
         {
-            id: '0.1',
-            type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-1',
-            nextStep: '1.1'
-        },
-        {
             id: '1.1',
             type:GAME_STEP_TYPE.PAGE,
             pageId: 'page-map',

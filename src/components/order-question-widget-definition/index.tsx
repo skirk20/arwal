@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useMemo, useReducer } from "react";
-import Box from "../layout/box/box";
 import { Card } from "./card";
 import style from "./style.module.css"
 import up from "../../assets/up.svg"

@@ -3,7 +3,6 @@ import { FindDiffGameState } from '../../find-diff';
 import { IScreen } from "../app";
 import { GameImage } from './image';
 import { ItemData } from '../types';
-import { LineStyle } from '@material-ui/icons';
 
 export default class GameScreen extends PIXI.Container implements IScreen {
 

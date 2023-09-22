@@ -146,7 +146,7 @@ export default function Page_map({ onNext }: Props) {
         const positionGeo = (geoPoints.find(x => x.id === a)?.position)
         setPositionGeoLat(String(positionGeo?.lat))
         setPositionGeoLng(String(positionGeo?.lng))
-    }, [setSelectedPoint, setShowPopup, setShowTime]);
+    }, [setSelectedPoint, setShowPopup, setShowTime, geoPoints, mapPointsData]);
 
 
     const gameState = useGameModuleState();

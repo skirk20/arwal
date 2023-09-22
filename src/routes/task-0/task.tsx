@@ -1,4 +1,3 @@
-import { QuizAnswerDummy, QuizQuestion } from "../../modules/game/questions/quiz-questions";
 import BoxTask from "../../components/layout/box/box"
 import { ButtonLike } from "../../atoms/button-like";
 import { Link } from "react-router-dom";

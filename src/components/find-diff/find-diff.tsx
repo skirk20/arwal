@@ -64,6 +64,6 @@ export function FindDiff({
             appRef.current = undefined;
         }
     }, [setAppReady, targets, img1src, img2src, imgWidth, imgHeight, onGameStateChanged]);
-
+    console.log(appReady)
     return <div className={styles.findDiffComponent} ref={widgetContainerRef}></div>
 }
