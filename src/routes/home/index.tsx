@@ -47,6 +47,6 @@ export default function HomePage() {
             }
         </nav>
         <p className={styles.errorMessege}>Proszę obrócić urządzenie</p>
-        <PageFooter />
+        {/* <PageFooter /> */}
     </div>
 }
