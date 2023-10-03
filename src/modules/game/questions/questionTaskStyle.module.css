@@ -38,7 +38,7 @@ input:checked + .ans{
     grid-template-rows: 1fr 1fr;
     width: 60%;
     height: 100%;
-    @media (max-width:600px){
+    @media (max-width:1000px){
         grid-template-columns: 100%;
         /* grid-template-rows: 1fr 1fr 1fr 1fr; */
         

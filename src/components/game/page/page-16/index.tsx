@@ -7,6 +7,6 @@ type Props = {
 
 export default function Page16({onNext}: Props) {
     return <Box>
-        <QuizQuestion id='7' onComplete={() => {}} onNext={onNext}></QuizQuestion>
+        <QuizQuestion id='9' onComplete={() => {}} onNext={onNext}></QuizQuestion>
     </Box>
 }

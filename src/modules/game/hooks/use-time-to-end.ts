@@ -5,7 +5,7 @@ export function useTimeToEnd(){
 
     const [timeNow, setTimeNow] = useState(0);
 
-    const GAME_TIME_LIMIT = 2 * 60 * 60 * 1000;
+    const GAME_TIME_LIMIT = 3.5 * 60 * 60 * 1000;
     // const GAME_TIME_LIMIT = 10 * 1000;
     
     const {startGameTime} = useGameState()

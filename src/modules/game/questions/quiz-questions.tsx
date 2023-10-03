@@ -9,7 +9,7 @@ import { useSaveAnswer } from "../hooks/use-save-answer";
 import { ButtonLike } from "../../../atoms/button-like";
 import { Popup } from "../../../molecules/popup/popup";
 import { Link } from "react-router-dom";
-import { getQuizTwo, getRide } from "../../../routes/routes";
+import { getRide } from "../../../routes/routes";
 import incorrect from "../../../assets/incorrect.png"
 import correct from "../../../assets/correct.png"
 
@@ -54,20 +54,8 @@ export function QuizQuestion({ id, onComplete, onNext, showPopup }: Props2) {
     <>
 
       <QuizQuestionDummy question={q} onConfirm={onQuestionConfirm} />
-      
-      {!showQuestion && showPopup === false && id === '13' &&
-      <Popup>
-        <QuizAnswerDummy question={q} userAnswerId={answer} />
-        <ButtonLike>
-          <Link to={getQuizTwo()}>dalej</Link>
-        </ButtonLike></Popup>}
 
-      {!showQuestion && showPopup === false && id === '14' && 
-      <Popup>
-        <QuizAnswerDummy question={q} userAnswerId={answer} />
-        <ButtonLike>
-        <Link to={getRide()}>dalej</Link>
-        </ButtonLike></Popup>}
+
 
 
       {!showQuestion && showPopup !== false && <Popup><QuizAnswerDummy question={q} userAnswerId={answer} /><ButtonLike><button id={styles.buttonOnPopup} onClick={onNext}>dalej</button></ButtonLike></Popup>}

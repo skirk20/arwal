@@ -1,3 +1,5 @@
+@media screen and (position: landscape) {
+  
 .box {
   background: white;
   color: var(--textColor);
@@ -86,5 +88,14 @@
     height: 100%;
     margin: 2px;
     // gap: 4px;
+  }
+}
+}
+@media (position: portrait) {
+  .box{
+    display: none;
+  }
+  main{
+    background-color: aqua;
   }
 }

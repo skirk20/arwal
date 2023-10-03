@@ -1,20 +1,14 @@
 import { GameScenario, GAME_STEP_TYPE } from "./types";
 
 export const SCENARIO: GameScenario = {
-    startStep: '1.1',
+    startStep: '2.1',
     steps: [
-        {
-            id: '1.1',
-            type:GAME_STEP_TYPE.PAGE,
-            pageId: 'page-map',
-            nextStep:'2.1',
-        },
         {
             id: '2.1',
             type: GAME_STEP_TYPE.GEO_STEP,
             position: {
-                lat: 51.04375, 
-                lng: 16.97133 
+                lat: 52.65654152276354,
+                lng: 20.628665850188753
                 
             },
             name: ['Punkt geo 1'],
@@ -29,8 +23,8 @@ export const SCENARIO: GameScenario = {
         {
             id: '2.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-4', //zepsute koło
-            nextStep: '1.1'
+            pageId: 'page-21', //trening spostrzegawczości
+            nextStep: '3.1'
         },
         {
             id:'3.1',
@@ -43,16 +37,22 @@ export const SCENARIO: GameScenario = {
             nextStep: '3.2'
         },
         {
-            id: '3.2',
-            type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-3', //quiz
-            nextStep: '3.3'
+            id:"3.2",
+            type:GAME_STEP_TYPE.PAGE,
+            pageId:"page-1",//wstęp
+            nextStep:"3.3"
         },
         {
             id: '3.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-7', //bezpieczny kierowca
-            nextStep: '1.1'
+            pageId: 'page-3', //quiz
+            nextStep: '3.4'
+        },
+        {
+            id: '3.4',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-13', //agenci specjalni
+            nextStep: '4.1'
         },
         {
             id:'4.1',
@@ -73,8 +73,8 @@ export const SCENARIO: GameScenario = {
         {
             id: '4.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-9', //UWAŻAJ
-            nextStep: '1.1'
+            pageId: 'page-5', //kto ważniejszy
+            nextStep: '5.1'
         },
         {
             id:'5.1',
@@ -95,8 +95,8 @@ export const SCENARIO: GameScenario = {
         {
             id: '5.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-11', //apteczka
-            nextStep: '1.1'
+            pageId: 'page-23', //zarządzanie kryzysowe
+            nextStep: '6.1'
         },
         {
             id:'6.1',
@@ -109,16 +109,22 @@ export const SCENARIO: GameScenario = {
             nextStep: '6.2'
         },
         {
-            id: '6.2',
+            id: '6.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-12', //quiz
-            nextStep: '6.3'
+            pageId: 'page-20', //wstęp
+            nextStep: '6.4' 
         },
         {
             id: '6.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-13', //agenci specjalni
-            nextStep: '1.1'
+            pageId: 'page-12', //quiz
+            nextStep: '6.4'
+        },
+        {
+            id: '6.4',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-4', //zepsute koło
+            nextStep: '7.1'
         },
         {
             id:'7.1',
@@ -139,8 +145,8 @@ export const SCENARIO: GameScenario = {
         {
             id: '7.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-15', //OSZCZĘDZANIE
-            nextStep: '1.1'
+            pageId: 'page-11', //gotowi na wszystko
+            nextStep: '8.1'
         },
         {
             id:'8.1',
@@ -161,8 +167,8 @@ export const SCENARIO: GameScenario = {
         {
             id: '8.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-6', //STABILNY TOR
-            nextStep: '1.1'
+            pageId: 'page-6', // '???
+            nextStep: '9.1'
         },
         {
             id:'9.1',
@@ -183,102 +189,8 @@ export const SCENARIO: GameScenario = {
         {
             id: '9.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-5', //kto ważniejszy
-            nextStep: '1.1'
-        },
-        {
-            id:'10.1',
-            type: GAME_STEP_TYPE.GEO_STEP,
-            position: {
-                lat: 51.05238,
-                lng: 16.97474
-            },
-            name: ["Punkt geo 9"],
-            nextStep: '10.2'
-        },
-        {
-            id: '10.2',
-            type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-20', //quiz
-            nextStep: '10.3'
-        },
-        {
-            id: '10.3',
-            type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-21', //trening spostrzegawczości
-            nextStep: '1.1'
-        },
-        {
-            id:'11.1',
-            type: GAME_STEP_TYPE.GEO_STEP,
-            position: {
-                lat: 51.03272,
-                lng:  16.96011
-            },
-            name: ["Punkt geo 10"],
-            nextStep: '11.2'
-        },
-        {
-            id: '11.2',
-            type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-22', //quiz
-            nextStep: '11.3'
-        },
-        {
-            id: '11.3',
-            type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-23', //zarządzanie kryzysowe
-            nextStep: '1.1'
-        },
-        {
-            id:'12.1',
-            type: GAME_STEP_TYPE.GEO_STEP,
-            position: {
-                lat: 51.0155,
-                lng: 17.00097
-            },
-            name: ["Punkt geo 11"],
-            nextStep: '12.2'
-        },
-        {
-            id: '12.2',
-            type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-24', //quiz
-            nextStep: '12.3'
-        },
-        {
-            id: '12.3',
-            type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-25', //antyradar
-            nextStep: '1.1'
-        },
-        {
-            id:'13.1',
-            type: GAME_STEP_TYPE.GEO_STEP,
-            position: {
-                lat: 50.99044,
-                lng: 17.00866 
-            },
-            name: ["Punkt geo 12"],
-            nextStep: '13.2'
-        },
-        {
-            id: '13.2',
-            type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-26', //quiz
-            nextStep: '13.3'
-        },
-        {
-            id: '13.3',
-            type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-27', //Wybieranie głosowe
-            nextStep: '1.1'
-        },
-        {
-            id: 'game-complete',
-            type: GAME_STEP_TYPE.PAGE,
-            pageId: 'game-complete',
-            nextStep: '15.1'
+            pageId: 'page-5', // '???
+            nextStep: 'summary-page'
         },
         {
             id: 'summary-page',

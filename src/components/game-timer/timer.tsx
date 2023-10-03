@@ -4,7 +4,7 @@ import timer from "../../assets/timer.png"
 export function Timer (){
     const timeToShow = useTimeToEnd()
     if(!timeToShow){
-        return <p className={style.timer}><img src={timer} alt="" /> 120:00</p>;
+        return <p className={style.timer}><img src={timer} alt="" /> 210:00</p>;
     }
 
     
