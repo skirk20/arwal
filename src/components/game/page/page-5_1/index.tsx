@@ -5,11 +5,11 @@ type Props = {
     onNext(): void
 }
 
-export default function Page16({onNext}: Props) {
+export default function Page5({onNext}: Props) {
     return <Box>
         <div className={style.mainDiv}>
-        <h1>UWAGA</h1>
-        <p>W naszej księdze podróży macie pytania dotyczące jazdy drogą ekspresową - odpowiedzcie na nie.</p>
+        <h1>A teraz w drogę!</h1>
+        <p>Kolejne zadanie uruchomi się po przejechaniu przez punkt 52.65654152276354, 20.628665850188753, Jeżeli uznacie, że we wskazanej lokalizacji zatrzymanie się będzie generowało sytuację niebezpieczną to jedźcie dalej i jeżeli zadanie będzie wymagało postoju, zatrzymajcie się w bezpiecznym miejscu.</p>
         <section>
         <ButtonLike>
                 <button onClick={onNext}>DALEJ</button>

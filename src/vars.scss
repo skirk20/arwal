@@ -1,12 +1,12 @@
 :root {
     // Base
-    --backgroundColor: #6ac5ef;
+    --backgroundColor: #262e32;
 
-    --baseColor: #6ac5ef;
+    --baseColor: #05a56f;
     --secondColor: #707070;
 
-    --quizTaskColor: #b4e2f7;
-    --textColor: #6237a0;
+    --quizTaskColor: #80a52a;
+    --textColor: #ffffff;
     --textOnBaseColor: #ffffff;
     --textOnSecondColor: #ffffff;
 
@@ -19,9 +19,9 @@
     --buttonFont: var(--baseFont);
     --buttonPadding: 0vh 2vh;
     //  - primary
-    --buttonBackground: var(--baseColor);
-    --buttonText: var(--textOnBaseColor);
-    --buttonBorder: 3px solid var(--baseColor);
+    --buttonBackground: var(--textOnBaseColor);
+    --buttonText: var(--baseColor);
+    --buttonBorder: 3px solid var(--textOnBaseColor);
     --buttonBorderRadius: 10px;
     --buttonMargin: 2px ;
     //  - :hover
@@ -47,6 +47,6 @@
     --labelTextColor: #aaaaaa;
 
     //quizButtons
-    --quizButtonBackground: #efe5f5;
-    --spanBackground: #e1d9ec
+    --quizButtonBackground: #e4e8dc;
+    --spanBackground: var(--quizTaskColor)
 }

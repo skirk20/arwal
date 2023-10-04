@@ -6,20 +6,21 @@ type Props = {
     onNext(): void
 }
 
-export default function Page22({onNext}: Props) {
+export default function Page22({ onNext }: Props) {
     return <Box>
         <div className={style.mainDiv}>
             <h1>
                 UWAGA
             </h1>
             <p>
-            Witajcie w Dąbrównie - mieście dwóch jezior - bardzo polecamy zwrócenie uwagi na położenie miejscowości. Jest to też miejscowość która mimo swojej wielkości posiada aż 3 świątynie. Synagogę, kościół ewangelicki i kościół katolicki, przed którym się znajdujecie. W nim Władysław Jagiełło uczestniczył w mszy na dzień przed Bitwą pod Grunwaldem.
+            Mam nadzieję, że nie będziecie musieli korzystać ze zdobytej teraz wiedzy. 
+Nowy kierowca wsiada za kierownicę.Jedźcie tu 53.4348, 20.03425, zadanie odpali się po przejechaniu przez punkt. Nie musicie się zatrzymywać
             </p>
             <section>
-        <ButtonLike>
-                <button onClick={onNext}>DALEJ</button>
-        </ButtonLike>
-        </section>
+                <ButtonLike>
+                    <button onClick={onNext}>DALEJ</button>
+                </ButtonLike>
+            </section>
         </div>
     </Box>
 }

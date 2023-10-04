@@ -1,7 +1,9 @@
 @media screen and (position: landscape) {
-  
+body{
+  background-color: white;
+}
 .box {
-  background: white;
+  background-color: var(--textColor);
   color: var(--textColor);
   border-radius: 1em;
   width: 97%;
@@ -9,11 +11,13 @@
   .header {
   }
   .mainDiv {
+    background-color: white;
     div>.imgBlock{
       width: 70%;
     }
     h1 {
-      padding: 1.5em 1.5em;
+      color: aqua;
+      padding: 1.5em 1.5em !important;
       padding-bottom: 0.5em;
       text-align: left;
       font-size: 1.5em;

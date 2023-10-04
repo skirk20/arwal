@@ -2,19 +2,22 @@
   .errorMessege {
     display: none;
   }
+  body{
+    background-color: var(--backgroundColor);
+  }
   .homePageView {
-    line-height: 5vh;
+    line-height: 4.5vh;
     width: 85%;
     margin: 0 auto;
-    background-color: white;
+    background-color: var(--baseColor);
     border-radius: 1em;
-    box-shadow: 1.5em 1.2em #5192b0;
+    box-shadow: 1.5em 1.2em #17171f;
     margin-top: 5vh;
     height: 80vh;
 
     .pageHeader {
       // min-height: 100px;
-      background: var(--baseColor);
+      background: var(--backgroundColor);
       // height: 20vh;
       padding: 0vh;
       align-self: center;
@@ -40,13 +43,13 @@
     .content {
       width: 85%;
       margin: 0 auto;
-      padding-top: 1em;
-      padding-bottom: 4vh;
+      padding-top: 2vh;
+      padding-bottom: 1vh;
       justify-content: center;
       color: var(--textColor);
       h2 {
         font-size: 4vh;
-        padding-bottom: 0.2em;
+        padding-bottom: 1vh;
       }
       p {
         text-align: center;
@@ -60,8 +63,8 @@
       justify-content: center;
       margin: 0 auto;
       text-align: center;
-      padding-top: 1em;
-      padding-bottom: 1em;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
     }
     main {
       width: 85%;
@@ -69,13 +72,11 @@
       margin-top: 4em;
       //   border: 4px solid white;
       border-radius: 1.5em;
-    }
+    } 
+    
   }
 
-  @media only screen and (max-width: 600px) {
-    .homePageView {
-    }
-  }
+ 
 }
 
 @media only screen and (min-height: 1000px) {

@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import styles from './geo-info.module.scss';
-import Box from "../../../layout/boxTask/box";
+import Box from "../../../layout/box/box";
 import useScenario from "../../../../modules/game/hooks/use-scenario";
 import { GAME_STEP_TYPE, GeoStep } from "../../../../modules/game/types";
 

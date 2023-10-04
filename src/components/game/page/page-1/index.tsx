@@ -8,8 +8,8 @@ type Props = {
 export default function Page1({onNext}: Props) {
     return <Box>
         <div className={style.mainDiv}>
-        <h1>UWAGA</h1>
-        <p>Zatrzymajcie się tutaj - to miejsce gdzie zmieniacie kierowcę, przy okazji macie zadanie do zrobienia.</p>
+        <h1>WAŻNA INFORMACJA</h1>
+        <p>Zależy nam na Waszym bezpieczeństwie oraz nie chcemy aby kierowca podczas dzisiejszej gry dostał mandat i punkty karne. Dlatego wyposażyliśmy wszystkie samochody w ANTYRADARY RST. Jedyne, z których można legalnie korzystać w Polsce 😉 Zachęcamy Was do korzystania z Antyradaru RST podczas dzisiejszej jazdy!</p>
         <section>
         <ButtonLike>
                 <button onClick={onNext}>DALEJ</button>

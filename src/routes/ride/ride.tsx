@@ -21,7 +21,7 @@ export default function RidePage() {
         <div className={styles.mainDiv}>
             <h1 >A teraz w drogę</h1>
 
-            <p>Jedźcie bezpiecznie, stosujcie się do przepisów ruchu drogowego. Na całość gry macie 2h.
+            <p>Jedźcie bezpiecznie, stosujcie się do przepisów ruchu drogowego. Na całość gry macie 3,5h.
                 <br />
                 Wasz sprzęt nie pozwala na połączenie aplikacji z nawigacją. Kopiujcie współrzędne do map googla - one wskażą Wam dokładne miejsce na mapie.
                 

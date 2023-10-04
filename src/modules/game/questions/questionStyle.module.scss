@@ -1,4 +1,9 @@
 .answer {
+  // width: 95%;
+  margin: 0 auto;
+  border-radius: 1em;
+  background-color: white;
+  color: var(--baseColor);
   padding-bottom: 4em;
   .checkbox {
     display: none;
@@ -54,6 +59,7 @@
     // height: max-content;
   }
   span{
+    color: white;
     height:8vh;
     font-size: 3vh;
     display: flex;
@@ -74,7 +80,7 @@
     
   }
   input:checked{
-    background: var(--textColor);
+    background: #394e08;
     transition: .5s;
     // background-size: 9px 9px;
   

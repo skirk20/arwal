@@ -1,33 +1,21 @@
-import { useState } from "react";
-import BoxTask from "../../../layout/boxTask/box"
-import { Popup } from "../../../../molecules/popup/popup";
-import styles from "../../../layout/boxTask/box.module.scss"
-import { ButtonLike } from "../../../../atoms/button-like";
-import { ButtonsRow } from "../../../../atoms/buttons-row/buttons-row";
-import voiceChoice from "../../../../assets/voiceChoice.png"
-
+import Box from "../../../../components/layout/box/box"
+import style from "../../../../components/layout/box/box.module.scss"
+import { ButtonLike } from "../../../../atoms/button-like"
 type Props = {
     onNext(): void
 }
 
 export default function Page27({ onNext }: Props) {
-    const [showPopup, setShowPopup] = useState<boolean>(false);
-    return <BoxTask>
-        <div className={styles.mainDiv}>
-            <h1>Wybieranie głosowe</h1>
-            <p>Nagrajcie filmik jak podczas jazdy dodajecie do trasy, wykorzystując wybieranie głosowe, przystanek na stacji benzynowej. Przedstawcie go osobie prowadzącej grę na punkcie finałowym.</p>
-            <img src={voiceChoice} alt="" />
+    return <Box>
+        <div className={style.mainDiv}>
+            <h1>Świetnie!</h1>
+            <p>W takim razie jedźcie dalej i przedyskutujcie czy utrzymywana przez Was odległość od pojazdu przed Wami jest bezpieczną odległością przy Waszej prędkości? Czy inni kierowcy utrzymują bezpieczne odległości?
+                Waszym kolejnym punktem jest: 53.54819, 19.93384 ; przez ten punkt przejeżdżacie, chyba że macie dużo czasu to warto się zatrzymać</p>
             <section>
-                <ButtonLike><button onClick={() => { setShowPopup(true) }}>Dalej</button></ButtonLike></section>
+                <ButtonLike>
+                    <button onClick={onNext}>DALEJ</button>
+                </ButtonLike>
+            </section>
         </div>
-        {showPopup && <Popup>
-            <p className={styles.popupTheme}>Czy napewno chcesz zamknąć zadanie? </p>
-            <ButtonsRow className={styles.popupNav}>
-
-                <ButtonLike><button onClick={() => { setShowPopup(false) }}>Wróć do zadania</button>
-                </ButtonLike><ButtonLike><button onClick={onNext}>Zakończ</button></ButtonLike>
-            </ButtonsRow>
-        </Popup>
-        }
-    </BoxTask>
+    </Box>
 }

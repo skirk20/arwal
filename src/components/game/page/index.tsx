@@ -10,6 +10,7 @@ const Page2 = lazy(() => import('./page-2'));
 const Page3 = lazy(() => import('./page-3'));
 const Page4 = lazy(() => import('./page-4'));
 const Page5 = lazy(() => import('./page-5'));
+const Page5_1 = lazy(() => import('./page-5_1'));
 const Page6 = lazy(() => import('./page-6'));
 const Page7 = lazy(() => import('./page-7'));
 const Page8 = lazy(() => import('./page-8'));
@@ -32,10 +33,11 @@ const Page24 = lazy(() => import('./page-24'));
 const Page25 = lazy(() => import('./page-25'));
 const Page26 = lazy(() => import('./page-26'));
 const Page27 = lazy(() => import('./page-27'));
+const Page28 = lazy(() => import('./page-28'));
+const Page29 = lazy(() => import('./page-29'));
+const Page30 = lazy(() => import('./page-30'));
+const Page31 = lazy(() => import('./page-31'));
 const SummaryPage = lazy(() => import('./summary-page'));
-const GameComplete = lazy(() => import('./game-complete'));
-const PageTimeEnd = lazy(() => import('./page-time-end'));
-const PageMap = lazy(() => import('./page-map'));
 
 type Props = {
     id: string
@@ -43,7 +45,7 @@ type Props = {
 
 export default function PageView({ id }: Props) {
     // window. = function() {
-        // window.location.replace(window.location.href)
+    // window.location.replace(window.location.href)
     // }
     const finishStep = useFinishGameStep();
 
@@ -66,6 +68,8 @@ export default function PageView({ id }: Props) {
                 return <Page4 onNext={onNext} />
             case 'page-5':
                 return <Page5 onNext={onNext} />
+            case 'page-5_1':
+                return <Page5_1 onNext={onNext} />
             case 'page-6':
                 return <Page6 onNext={onNext} />
             case 'page-7':
@@ -110,14 +114,16 @@ export default function PageView({ id }: Props) {
                 return <Page26 onNext={onNext} />
             case 'page-27':
                 return <Page27 onNext={onNext} />
+            case 'page-28':
+                return <Page28 onNext={onNext} />
+            case 'page-29':
+                return <Page29 onNext={onNext} />
+            case 'page-30':
+                return <Page30 onNext={onNext} />
+            case 'page-31':
+                return <Page31 onNext={onNext} />
             case 'summary-page':
                 return <SummaryPage onNext={onNext} />
-            case 'game-complete':
-                return <GameComplete onNext={onNext} />
-            case 'page-time-end':
-                return <PageTimeEnd onNext={onNext} />
-            case 'page-map':
-                return <PageMap onNext={onNext}/>
             default:
                 return <PagePlaceholder onNext={onNext} />
         }

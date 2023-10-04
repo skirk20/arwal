@@ -1,13 +1,20 @@
 import Box from "../../../../components/layout/box/box"
-import { QuizQuestion } from "../../../../modules/game/questions/quiz-questions"
-
+import style from "../../../../components/layout/box/box.module.scss"
+import { ButtonLike } from "../../../../atoms/button-like"
 type Props = {
     onNext(): void
 }
 
 export default function Page2({onNext}: Props) {
     return <Box>
-        <QuizQuestion id='3' onComplete={() => {}} onNext={onNext}></QuizQuestion>
-        
+        <div className={style.mainDiv}>
+        <h1>WAZNA INFORMACJA</h1>
+        <p>W schowku przed pasażerem znajduje się Wasz Antyradar RST, który pomoże wam podczas podróży. Znajdźcie go i odpowiedzcie na pierwsze pytanie dzisiejszego wyzwania</p>
+        <section>
+        <ButtonLike>
+                <button onClick={onNext}>DALEJ</button>
+        </ButtonLike>
+        </section>
+        </div>
     </Box>
 }

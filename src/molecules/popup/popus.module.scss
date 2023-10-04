@@ -19,10 +19,12 @@
     p{
         font-size: 3vh;
         margin: 0;
+        color: var(--baseColor);
     }
 }
 
 .inner {
+    
     border-radius: 1em;
     max-width: 1200px;
     padding: 1rem 4rem;

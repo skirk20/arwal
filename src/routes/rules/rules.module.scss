@@ -6,12 +6,16 @@ html{
   height: 120vh;
   padding-bottom: 3em;
   .rules{
-    padding-top: 5px;
     // font-size: 4em;
-    border-bottom: 3px solid var(--baseColor);
+    border-bottom: 3px solid var(--backgroundColor);
     h2{
-      margin: .5em;
+      padding: 2vh;
+      margin: 0 auto;
+      border: 2px solid var(--baseColor);
+      border-start-start-radius: .5em;
+      border-start-end-radius: .5em;
       font-size: 5vh;
+      background-color: var(--backgroundColor);
     }
     
   }

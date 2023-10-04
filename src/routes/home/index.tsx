@@ -26,8 +26,9 @@ export default function HomePage() {
 
         <div className={styles.content}>
             <h2>Witajcie!</h2>
-            <p className={styles.contentText}>Witajcie na grze przejazdowej ARVAL Drive and Lern. 
-Jedziemy z Zegrza do Ostródy, a po drodze będziecie mieć do wykonania 9 zadań.
+            <p className={styles.contentText}>Witajcie na grze przejazdowej ARVAL Drive and Lern. <br />
+Jedziemy z Zegrza do Ostródy, a po drodze będziecie mieć do wykonania 8 zadań.
+Ważna porada, dająca niesprawiedliwą przewagę! Czytajcie to co jest napisane w aplikacji na głos,<b> ze zrozumieniem,</b> powoli. Słowa mają znaczenie, a niektóre pytania mogą być podchwytliwe.
             </p>
         </div>
         <nav>

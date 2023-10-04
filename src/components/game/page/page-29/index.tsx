@@ -5,9 +5,9 @@ type Props = {
     onNext(): void
 }
 
-export default function Page24({onNext}: Props) {
+export default function Page26({onNext}: Props) {
     return <Box>
-        <QuizQuestion id='7' onComplete={() => {}} onNext={onNext}></QuizQuestion>
+        <QuizQuestion id='9' onComplete={() => {}} onNext={onNext}></QuizQuestion>
 
     </Box>
 }

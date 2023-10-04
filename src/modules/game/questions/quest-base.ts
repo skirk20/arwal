@@ -28,96 +28,93 @@ export interface IQuizQuestion {
 export const QUESTIONS: IQuizQuestion[] = [
     {
         id: '1',
-        text: 'Jakie, wg. producenta, jest średnie zużycie paliwa w Waszych VW Touran z silnikiem 2.0 TDI?',
+        text: 'Czym tak naprawdę jest ANTYRADAR RST?',
         imgSrc: img1,
-        description: "",
+        description: "Umiejętne korzystanie z ANTYRADARU RST to najskuteczniejszy sposób na ochronę kierowcy przed wszelkimi mandatami i punktami karnymi. Nie dość, że jest legalny, to jeszcze Policja zachęca do jego codziennego używania.",
         answers: [
             {
                 id: '1',
-                text: '6.3 l/100 km.',
+                text: 'Urządzeniem informującym kierowcę o miejscu kontroli prędkości,',
             }, {
                 id: '2',
-                text: '5.1 l/100 km.',
-                isCorrect: true
+                text: 'Urządzeniem zagłuszającym laserowy pomiar prędkości z fotoradarów,',
+                
             }, {
                 id: '3',
-                text: '3.1 l/100 km.'
-            }, {
-                id: '4',
-                text: '7.2 l/100 km.'
+                text: 'Aktualnym Kodeksem Drogowym,',
+                isCorrect: true
             }
         ]
 
     },
     {
         id: '2',
-        text: 'Ile kilometrów musicie przejechać volkswagenem touranem żeby do środowiska trafiła 1 tona CO2?',
+        text: 'Sporą część dzisiejszej trasy to droga ekspresowa. W Polsce są drogi ekspresowe jedno i dwujezdniowe. Jaki jest limit prędkości dla samochodu osobowego na jednojezdniowej drodze ekspresowej?',
         imgSrc: img2,
-        description: "Volkswagen touran emituje 133 gramy CO2 na każdy przejechany kilometr.",
+        description: "Na drogach ekspresowych, jednojezdniowych obowiązuje limit prędkości do 100 km/h. Na dwupasmowych wynosi on 120 km/h",
         answers: [{
             id: '1',
-            text: '115 g/km = 8695 km.'
+            text: '100',
+            isCorrect: true
         }, {
             id: '2',
-            text: '162 g/km = 6172 km.'
+            text: '110'
         }, {
             id: '3',
-            text: '148 g/km = 6756 km.'
+            text: '120'
         }, {
             id: '4',
-            text: '133 g/km = 7518 km.',
-            isCorrect: true
+            text: '130',
+            
         }]
     },
     {
         id: '3',
-        text: 'Czy kierując samochodem osobowym w tunelu o długości 600 m położonym w obszarze zabudowanym, macie obowiązek utrzymywać odstęp od poprzedzającego pojazdu nie mniejszy niż 50 metrów?',
+        text: 'Jedziecie po tej drodze. Mijacie ten znak z prawej strony. Jaka jest dopuszczalna prędkość na tej drodze, za tym znakiem?',
         imgSrc: img3,
-        description: "Obowiązek zachowania odstępu co najmniej 50 m mamy w tunelach, których długość przekracza 500 metrów i znajdują się poza obszarem zabudowanym.",
+        description: "poza obszarem zabudowanym, na drogach dwujezdniowych, dopuszczalna prędkość dla samochodu osobowego wynosi 100 km/h. Gdyby to była tylko jedna jezdnia to iimit prędkości wynosiłby 90 km/h.",
         answers: [{
             id: '1',
-            text: 'Tak, ale prowadząc samochód o masie całkowitej przekraczającej 2,5 tony.'
+            text: '70'
         }, {
             id: '2',
-            text: 'Nie.',
-            isCorrect: true,
+            text: '90',
+            
         }, {
             id: '3',
-            text: 'Tak.'
+            text: '100',
+            isCorrect: true,
+        },{
+            id: '4',
+            text: '120'
         }]
     },
     {
         id: '4',
-        text: 'Jedziecie z prędkością 80 km/h. Jaka pozycja początkowa zapewni Ci optymalny tor jazdy po zakręcie?',
+        text: 'Czy macie obowiązek bezwarunkowo zatrzymać pojazd przed linią złożoną z trójkątów?',
         imgSrc: img4,
-        description: "Generalna zasada doboru optymalnego toru jazdy polega na wykonaniu tego manewru po możliwie łagodnym łuku. Pokonanie tego konkretnego zakrętu powinno się rozpocząć możliwie blisko podwójnej linii ciągłej. W połowie łuku należy się zbliżyć do prawej krawędzi jezdni (szczyt zakrętu), a wyjście z zakrętu powinno zakończyć się znowu przy osi jezdni. Dodatkowym elementem o którym należy wspomnieć w aspekcie pokonywania zakrętów jest ograniczenie działania siły odśrodkowej.",
+        description: "Nie, ponieważ nie jest to linia bezwzględnego zatrzymania. Jest to oznakowanie nakazujące ustąpienia pierwszeństwa. Jeżeli nikt nie będzie jechał drogą z pierwszeństwem to nie musimy się tu zatrzymywać.",
         answers: [{
             id: '1',
-            text: 'Na środku drogi, z częściowym przekroczeniem widocznej linii.'
+            text: 'TAK'
         }, {
             id: '2',
-            text: 'Przy prawej krawędzi jezdni.'
-        }, {
-            id: '3',
-            text: 'Przy linii rozdzielającej pasy ruchu - na prawej połowie jezdni.',
+            text: 'NIE',
             isCorrect: true
         }]
     },
     {
         id: '5',
-        text: 'Z jaką dopuszczalną prędkością wolno Wam kierować samochodem osobowym na drodze za widocznym znakiem?',
+        text: 'Czy na tej drodze zawsze macie obowiązek ustąpić pierwszeństwa pieszemu?',
         imgSrc: img5,
-        description: "Dopuszczalna prędkość na drodze dwujezdniowej dwukierunkowej, o dwóch pasach ruchu wynosi - 100 km/h. Na widocznym powyżej obrazku mamy do czynienia z taką właśnie dwujezdniową drogą dwukierunkową, znajdującą się poza terenem zabudowanym. Między jezdniami znajduje się pas zieleni i na tej podstawie możemy wnioskować, że mamy do czynienia z tą właśnie drogą.",
+        description: "W strefie ruchu, występują drogi publiczne i przynajmniej jedna z dróg jest drogą wewnętrzną. Administrator sam ustala organizację ruchu na tym obszarze. Może więc uznać, że jedna droga jest drogą z pierwszeństwem, a inna podporządkowaną. W strefie ruchu pieszy będzie miał pierwszeństwo wyłącznie jeśli ruch będzie odbywał się na tych samych płaszczyznach, np. parkingi przed hipermarketami. W pytaniu pojawia się jednak zapytanie “czy zawsze?”. Oczywiście, że nie zawsze.",
         answers: [{
             id: '1',
-            text: '90 km/h'
+            text: 'TAK'
         }, {
             id: '2',
-            text: '100 km/h',
+            text: 'NIE',
             isCorrect: true
-        }, {
-            id: '3',
-            text: '110 km/h'
         }]
     },
     {
@@ -136,30 +133,36 @@ export const QUESTIONS: IQuizQuestion[] = [
     },
     {
         id: '7',
-        text: 'Czy ten znak poziomy zabrania zmiany pasa ruchu?',
+        text: 'Skorzystajcie ponownie z antyradaru  RST. Odnajdźcie, który dział, rozdział, oddział, artykuł, punkt, określa zasady zachowania się kierującego pojazdem wobec pieszego wchodzącego na przejście dla pieszych?',
         imgSrc: img7,
-        description: "Tak, widoczna linia pojedyncza ciągła zabrania przejeżdżania przez nią. Linia pojedyncza ciągła oddziela pasy ruchu o tym samym kierunku i oznacza ponadto zakaz przejeżdżania przez tę linię i najeżdżania na nią.",
+        description: "",
         answers: [{
             id: '1',
-            text: 'TAK',
-            isCorrect: true
+            text: 'Dział I, rozdział 4, oddział 2, artykuł 34, punkt 3',
         }, {
             id: '2',
-            text: 'NIE'
+            text: 'Dział II, rozdział 3, oddział 7, artykuł 26, punkt 1',
+            isCorrect: true
+        },{
+            id: '2',
+            text: 'Dział II, rozdział 2, oddział 13, artykuł 1'
+        },{
+            id: '2',
+            text: 'Dział I, rozdział 6, oddział 7, artykuł 23, punkt 1'
         },]
     },
     {
         id: '8',
-        text: 'Czy zmieniając nieznacznie tor jazdy pojazdu w obrębie dotychczas zajmowanego pasa ruchu, macie obowiązek sygnalizować to wcześniej kierunkowskazem?',
+        text: 'czy odległość 6 metrów między pojazdami, jadącymi z prędkością 40-45 km/h jest wystarczająca, aby w nagłej sytuacji drogowej nie doszło do kolizji?',
         imgSrc: img8,
         description: "Sygnalizować kierunkowskazem należy zamiar zmiany pasa ruchu i zamiar zmiany kierunku jazdy. Przepisy nie nakazują sygnalizowania nieznacznej zmiany toru jazdy, gdy na przykład delikatnie omijasz dziurę w nawierzchni jezdni.",
         answers: [{
             id: '1',
-            text: 'TAK'
+            text: 'jeżeli jadący przed nami kierowca nagle zahamuje to praktycznie nie mam szansy na uniknięcie kolizji,',
+            isCorrect: true
         }, {
             id: '2',
-            text: 'NIE',
-            isCorrect: true
+            text: 'Jeżeli jadący przed nami kierowca gwałtownie zahamuje to bez problemu zatrzymam auto na tych 6 metrach i nie dojdzie do kolizji,',
         }]
     },
     {

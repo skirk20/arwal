@@ -1,8 +1,58 @@
 import { GameScenario, GAME_STEP_TYPE } from "./types";
 
 export const SCENARIO: GameScenario = {
-    startStep: '2.1',
+    startStep: '1.1',
     steps: [
+        {
+            id: '1.1',
+            type: GAME_STEP_TYPE.GEO_STEP,
+            position: {
+                lat: 52.65654152276354,
+                lng: 20.628665850188753
+                
+            },
+            name: ['Punkt geo 1'],
+            nextStep: '1.2'
+        },
+        {
+            id: '1.2',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-1', //tekst 
+            nextStep: '1.3'
+        },
+        {
+            id: '1.3',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-2', //tekst
+            nextStep: '1.4'
+        },
+        {
+            id: '1.4',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-3', //quiz
+            nextStep: '1.5'
+        },
+        {
+            id: '1.5',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-4', //bezpieczny kierowca
+            nextStep: '1.6'
+        },
+        {
+            id: '1.6',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-5', //tekst
+            nextStep: '1.7'
+        },
+        {
+            id: '1.7',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-5_1', //tekst
+            nextStep: '2.1'
+        },
+
+
+
         {
             id: '2.1',
             type: GAME_STEP_TYPE.GEO_STEP,
@@ -17,15 +67,25 @@ export const SCENARIO: GameScenario = {
         {
             id: '2.2',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-2', //quiz
+            pageId: 'page-6', //quiz
             nextStep: '2.3'
         },
         {
             id: '2.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-21', //trening spostrzegawczości
+            pageId: 'page-7', //gotowi na wszystko
+            nextStep: '2.4'
+        },
+        {
+            id: '2.4',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-8', //tekst
             nextStep: '3.1'
         },
+
+
+
+
         {
             id:'3.1',
             type: GAME_STEP_TYPE.GEO_STEP,
@@ -39,21 +99,31 @@ export const SCENARIO: GameScenario = {
         {
             id:"3.2",
             type:GAME_STEP_TYPE.PAGE,
-            pageId:"page-1",//wstęp
+            pageId:"page-9",//tekst
             nextStep:"3.3"
         },
         {
             id: '3.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-3', //quiz
+            pageId: 'page-10', //quiz
             nextStep: '3.4'
         },
         {
             id: '3.4',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-13', //agenci specjalni
+            pageId: 'page-11', //agenci specjalni
             nextStep: '4.1'
         },
+        {
+            id: '3.4',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-12', //tekst
+            nextStep: '4.1'
+        },
+
+
+
+
         {
             id:'4.1',
             type: GAME_STEP_TYPE.GEO_STEP,
@@ -67,15 +137,25 @@ export const SCENARIO: GameScenario = {
         {
             id: '4.2',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-8', //quiz
+            pageId: 'page-13', //quiz
             nextStep: '4.3'
         },
         {
             id: '4.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-5', //kto ważniejszy
+            pageId: 'page-14', //kto ważniejszy
             nextStep: '5.1'
         },
+        {
+            id: '4.3',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-15', //tekst
+            nextStep: '5.1'
+        },
+
+
+
+
         {
             id:'5.1',
             type: GAME_STEP_TYPE.GEO_STEP,
@@ -89,15 +169,25 @@ export const SCENARIO: GameScenario = {
         {
             id: '5.2',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-10',//quiz
+            pageId: 'page-16',//tekst
             nextStep: '5.3'
         },
         {
             id: '5.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-23', //zarządzanie kryzysowe
+            pageId: 'page-17', //zarządzanie kryzysowe
+            nextStep: '5.4'
+        },
+        {
+            id: '5.4',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-18', //tekst
             nextStep: '6.1'
         },
+
+
+
+
         {
             id:'6.1',
             type: GAME_STEP_TYPE.GEO_STEP,
@@ -109,23 +199,33 @@ export const SCENARIO: GameScenario = {
             nextStep: '6.2'
         },
         {
-            id: '6.3',
+            id: '6.2',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-20', //wstęp
-            nextStep: '6.4' 
+            pageId: 'page-19', //tekst
+            nextStep: '6.3' 
         },
         {
             id: '6.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-12', //quiz
+            pageId: 'page-20', //quiz
             nextStep: '6.4'
         },
         {
             id: '6.4',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-4', //zepsute koło
+            pageId: 'page-21', //zepsute koło
+            nextStep: '6.5'
+        },
+        {
+            id: '6.5',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-22', //tekst
             nextStep: '7.1'
         },
+
+
+
+
         {
             id:'7.1',
             type: GAME_STEP_TYPE.GEO_STEP,
@@ -139,15 +239,37 @@ export const SCENARIO: GameScenario = {
         {
             id: '7.2',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-14', //quiz
+            pageId: 'page-23', //tekst
             nextStep: '7.3'
         },
         {
             id: '7.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-11', //gotowi na wszystko
+            pageId: 'page-24', //quiz
+            nextStep: '7.4'
+        },
+        {
+            id: '7.4',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-25', //videolekcja
+            nextStep: '7.5'
+        },
+        {
+            id: '7.5',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-26', //quiz
+            nextStep: '7.6'
+        },
+        {
+            id: '7.6',
+            type: GAME_STEP_TYPE.PAGE,
+            pageId: 'page-27', //tekst
             nextStep: '8.1'
         },
+
+
+
+
         {
             id:'8.1',
             type: GAME_STEP_TYPE.GEO_STEP,
@@ -161,35 +283,25 @@ export const SCENARIO: GameScenario = {
         {
             id: '8.2',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-16', //quiz
+            pageId: 'page-28', //tekst
             nextStep: '8.3'
         },
         {
             id: '8.3',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-6', // '???
-            nextStep: '9.1'
+            pageId: 'page-29', // quiz
+            nextStep: '8.4'
         },
         {
-            id:'9.1',
-            type: GAME_STEP_TYPE.GEO_STEP,
-            position: {
-                lat: 51.01147, 
-                lng: 16.95661
-            },
-            name: ["Punkt geo 8"],
-            nextStep: '9.2'
-        },
-        {
-            id: '9.2',
+            id: '8.4',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-18', //quiz
-            nextStep: '9.3'
+            pageId: 'page-30', //trening spostrzegawczości
+            nextStep: '8.5'
         },
         {
-            id: '9.3',
+            id: '8.5',
             type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-5', // '???
+            pageId: 'page-31', // tekst
             nextStep: 'summary-page'
         },
         {

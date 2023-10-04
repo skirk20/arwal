@@ -1,26 +1,22 @@
-import { useState } from "react"
-import { ImagesBase } from "../../../../modules/game/images/images-base"
-import { Popup } from "../../../../molecules/popup/popup"
+import { useState } from "react";
+import { Popup } from "../../../../molecules/popup/popup";
 import BoxTask from "../../../layout/boxTask/box"
+import { ButtonsRow } from "../../../../atoms/buttons-row/buttons-row";
+import { ButtonLike } from "../../../../atoms/button-like";
 import styles from "../../../layout/boxTask/box.module.scss"
-import page4_car from "../../../../assets/page4_car.png"
-import { ButtonLike } from "../../../../atoms/button-like"
-import { ButtonsRow } from "../../../../atoms/buttons-row/buttons-row"
+import carWheel from "../../../../assets/carWheel.png"
 
 type Props = {
     onNext(): void
 }
-export interface ForImg {
-    images: ImagesBase
-}
+
 export default function Page4({ onNext }: Props) {
     const [showPopup, setShowPopup] = useState<boolean>(false);
     return <BoxTask>
         <div className={styles.mainDiv}>
-            <h1>Zepsute koło</h1>
-            <p> O nie! Złapaliście gumę! Stwórzcie fotoporadnik, który pozwoli nieświadomym kierowcom dowiedzieć się co i w jakiej kolejności muszą zrobić aby bezpiecznie wymienić koło.</p>
-            <p>UWAGA! NIE WYMIENIAJCIE KOŁA, zróbcie tylko zdjęcia wszystkim rzeczom i narzędziom potrzebnym do bezpiecznej wymiany. Po sesji zdjęciowej umieśćcie je w odpowiednich miejscach, aby były gotowe do użycia w razie prawdziwej awarii. Wykonane zdjęcia przedstawcie osobie prowadzącej grę na punkcie finałowym.</p>
-            <img src={page4_car} alt="" />
+            <h1>Bezpieczny kierowca</h1>
+            <p>Odpowiednia pozycja za kierownicą ma wpływ na bezpieczeństwo i komfort jazdy. Zatem pomóżcie kierowcy zająć prawidłową pozycję za kierownicą i zróbcie mu instruktażowe zdjęcie (lub zdjęcia) dzięki, którym osoby, które nie wiedzą jak siedzieć prawidłowo za kierownicą dostaną czytelny fotoporadnik edukacyjny. Bądźcie kreatywni! Niech te zdjęcia wszystko wytłumaczą! Zdjęcia pokażcie na punkcie finałowym osobie prowadzącej grę.</p>
+            <img src={carWheel} alt="" />
             <section className={styles.butttonLike}>
                 <ButtonLike>
                     <button onClick={() => { setShowPopup(true) }}>Zakończ zadanie</button>
@@ -36,6 +32,5 @@ export default function Page4({ onNext }: Props) {
             </ButtonsRow>
         </Popup>
         }
-
     </BoxTask>
 }
