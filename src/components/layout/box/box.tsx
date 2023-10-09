@@ -10,6 +10,7 @@ export default function Box({ children }: Props) {
         
         <div className="inner">
             {children}
+            <p className={styles.errorMessege}>proszę odrócić urządzenie</p>
         </div>
     </div></div>
 }

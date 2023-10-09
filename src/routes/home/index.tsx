@@ -20,8 +20,8 @@ export default function HomePage() {
 
     return <div className={styles.homePageView}>
         <div className={styles.pageHeader}>
-            <h1 className={styles.headerTitle}>Safety Master</h1>
-            <p>Terenowe Mistrzostwa Świadomych Kierowców.</p>
+            <h1 className={styles.headerTitle}> Arval Drive and Learn</h1>
+            {/* <p>Terenowe Mistrzostwa Świadomych Kierowców.</p> */}
         </div>
 
         <div className={styles.content}>

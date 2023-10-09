@@ -34,7 +34,7 @@ export default function RulesPage() {
                 <Link className="button" to={getRide()}>Dalej</Link>
             </ButtonLike>
         </ButtonsRow>
-
+    
 
         {/* {showGPSInfo && <Popup onOKClick={goToGame}>
             <p>

@@ -1,12 +1,12 @@
 .box {
-  background: var(--quizButtonBackground);
+  background: var(--baseColor);
   color: var(--textColor);
   border-radius: 1em;
   width: 97%;
   margin: 0 auto;
   text-align: center;
   .adress{
-    color: var(--baseColor);
+    color: var(--textColor);
     padding: 3em 0;
     font-size: 1.3em;
   }
@@ -22,6 +22,7 @@
       font-size: 5em;
     }
     p {
+      color: var(--baseColor);
       text-align: center;
       background-color: white;
       width: 60%;

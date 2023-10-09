@@ -1,8 +1,9 @@
-@media screen and (position: landscape) {
+
 body{
-  background-color: white;
+  // background-color: white;
 }
 .box {
+  height: fit-content;
   background-color: var(--textColor);
   color: var(--textColor);
   border-radius: 1em;
@@ -11,20 +12,19 @@ body{
   .header {
   }
   .mainDiv {
-    background-color: white;
     div>.imgBlock{
       width: 70%;
     }
     h1 {
-      color: aqua;
-      padding: 1.5em 1.5em !important;
+      color: var(--baseColor);
+      padding: 1.5em 1.5em;
       padding-bottom: 0.5em;
       text-align: left;
       font-size: 1.5em;
     }
     p {
       text-align: left;
-      background-color: var(--quizButtonBackground);
+      background-color: var(--baseColor);
       margin: 0;
       padding: 1em 2em;
       line-height: normal;
@@ -94,7 +94,7 @@ body{
     // gap: 4px;
   }
 }
-}
+
 @media (position: portrait) {
   .box{
     display: none;

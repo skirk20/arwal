@@ -1,10 +1,10 @@
-import img1 from "../../../assets/fuel.png"
+import img1 from "../../../assets/antyradar.png"
 import img2 from "../../../assets/co2.png"
-import img3 from "../../../assets/3.jpg"
+import img3 from "../../../assets/3.png"
 import img4 from "../../../assets/4.jpg"
 import img5 from "../../../assets/5.jpg"
 import img6 from "../../../assets/6.jpg"
-import img7 from "../../../assets/7.jpg"
+import img7 from "../../../assets/book.png"
 import img8 from "../../../assets/8.jpg"
 import img9 from "../../../assets/9.jpg"
 import img10 from "../../../assets/10.jpg"
@@ -50,7 +50,7 @@ export const QUESTIONS: IQuizQuestion[] = [
     {
         id: '2',
         text: 'Sporą część dzisiejszej trasy to droga ekspresowa. W Polsce są drogi ekspresowe jedno i dwujezdniowe. Jaki jest limit prędkości dla samochodu osobowego na jednojezdniowej drodze ekspresowej?',
-        imgSrc: img2,
+        imgSrc: img13,
         description: "Na drogach ekspresowych, jednojezdniowych obowiązuje limit prędkości do 100 km/h. Na dwupasmowych wynosi on 120 km/h",
         answers: [{
             id: '1',
@@ -92,7 +92,7 @@ export const QUESTIONS: IQuizQuestion[] = [
     {
         id: '4',
         text: 'Czy macie obowiązek bezwarunkowo zatrzymać pojazd przed linią złożoną z trójkątów?',
-        imgSrc: img4,
+        imgSrc: img11,
         description: "Nie, ponieważ nie jest to linia bezwzględnego zatrzymania. Jest to oznakowanie nakazujące ustąpienia pierwszeństwa. Jeżeli nikt nie będzie jechał drogą z pierwszeństwem to nie musimy się tu zatrzymywać.",
         answers: [{
             id: '1',
@@ -158,11 +158,11 @@ export const QUESTIONS: IQuizQuestion[] = [
         description: "Sygnalizować kierunkowskazem należy zamiar zmiany pasa ruchu i zamiar zmiany kierunku jazdy. Przepisy nie nakazują sygnalizowania nieznacznej zmiany toru jazdy, gdy na przykład delikatnie omijasz dziurę w nawierzchni jezdni.",
         answers: [{
             id: '1',
-            text: 'jeżeli jadący przed nami kierowca nagle zahamuje to praktycznie nie mam szansy na uniknięcie kolizji,',
+            text: 'NIE',
             isCorrect: true
         }, {
             id: '2',
-            text: 'Jeżeli jadący przed nami kierowca gwałtownie zahamuje to bez problemu zatrzymam auto na tych 6 metrach i nie dojdzie do kolizji,',
+            text: 'TAK',
         }]
     },
     {
@@ -180,87 +180,7 @@ export const QUESTIONS: IQuizQuestion[] = [
             isCorrect: true
         }]
     },
-    {
-        id: '10',
-        text: 'Czy na tej drodze zawsze macie obowiązek ustąpić pierwszeństwa pieszemu?',
-        imgSrc: img10,
-        description: "W strefie ruchu, występują drogi publiczne i przynajmniej jedna z dróg jest drogą wewnętrzną. Administrator sam ustala organizację ruchu na tym obszarze. Może więc uznać, że jedna droga jest drogą z pierwszeństwem, a inna podporządkowaną. W strefie ruchu pieszy będzie miał pierwszeństwo wyłącznie jeśli ruch będzie odbywał się na tych samych płaszczyznach, np. parkingi przed hipermarketami. W pytaniu pojawia się jednak zapytanie “czy zawsze?”. Oczywiście, że nie zawsze.",
-        answers: [{
-            id: '1',
-            text: 'TAK'
-        }, {
-            id: '2',
-            text: 'NIE',
-            isCorrect: true
-        }]
-    },
-    {
-        id: '11',
-        text: 'Czy macie obowiązek bezwarunkowo zatrzymać pojazd przed linią złożoną z trójkątów?',
-        imgSrc: img11,
-        description: "Nie, ponieważ nie jest to linia bezwzględnego zatrzymania. Jest to oznakowanie nakazujące ustąpienia pierwszeństwa. Jeżeli nikt nie będzie jechał drogą z pierwszeństwem to nie musimy się tu zatrzymywać.",
-        answers: [{
-            id: '1',
-            text: 'TAK'
-        }, {
-            id: '2',
-            text: 'NIE',
-            isCorrect: true
-        }]
-    },
-    {
-        id: '12',
-        text: 'Jaką funkcję spełnia system przeciwblokujący (ABS)?',
-        imgSrc: img12,
-        description: "",
-        answers: [{
-            id: '1',
-            text: 'Skraca drogę hamowania w każdych warunkach.'
-        }, {
-            id: '2',
-            text: 'Zapobiega zerwaniu przyczepności opon podczas przyspieszania.'
-        }, {
-            id: '3',
-            text: 'Ułatwia omijanie przeszkód w czasie hamowania.',
-            isCorrect: true
-        }]
-    },
-    {
-        id: '13',
-        text: 'Co jest celem gry pt. "Poruszanie się po polskich drogach"?',
-        imgSrc: img13,
-        description: "Zawsze podczas jazdy najważniejsze jest bezpieczeństwo i o tym musimy pamiętać.",
-        answers: [{
-            id: '1',
-            text: 'Ustanowienie jak największej liczby martwych punktów.'
-        }, {
-            id: '2',
-            text: 'Zbieranie ujemnych punktów karnych.'
-        }, {
-            id: '3',
-            text: 'Poznanie funkcji systemu detekcji martwego pola.',
-
-        }, {
-            id: '4',
-            text: 'Bezpieczny powrót do domu.',
-            isCorrect: true
-        }]
-    },
-    {
-        id: '14',
-        text: 'Czy można w Polsce legalnie korzystać z antyradarów?',
-        imgSrc: img14,
-        description: "Antyradar RST to kodeks drogowy, który każdy kierowca powinien znać aby, stosując się do przepisów, jeździć bezpiecznie.",
-        answers: [{
-            id: '1',
-            text: 'Nie - korzystanie z każdego antyradaru jest zabronione.'
-        }, {
-            id: '2',
-            text: 'Tak - korzystanie z Antyradaru RST jest dozwolone.',
-            isCorrect: true
-        }]
-    },
-
+    
 ]
 
 

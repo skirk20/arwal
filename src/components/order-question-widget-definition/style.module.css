@@ -24,7 +24,7 @@
     padding: 0;
     background-color: var(--textColor);
     border: none;
-    color: white;
+    color: var(--baseColor);
 }
 
 span>img{
@@ -45,6 +45,7 @@ button{
     font-size: 2em;
 } */
 .definition{
+    color: var(--baseColor);
     max-width: 3em;
     width: inherit;
 
@@ -58,6 +59,7 @@ section{
     background-color: var(--quizButtonBackground);
 }
 .pickUp{
+    color: var(--baseColor);
     line-height: normal;
     font-size: 12pt;
     margin: 0 .5rem;

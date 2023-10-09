@@ -11,7 +11,7 @@
     margin: 1em 2em;
     padding: 1em 2em;
     /* margin: 0 auto; */
-    background-color: var(--quizButtonBackground);
+    background-color: var(--textColor);
     border-radius: var(--buttonBorderRadius);
 }
 .img{
@@ -19,14 +19,15 @@
 }
 .imgWithDesc{
     margin-top: 1em;
-    border: 2px solid;
+    border: 2px solid var(--baseColor);
     border-radius: var(--buttonBorderRadius);
     padding:  1em 0;
     padding-bottom: 0;
     margin-bottom: .5em;
 }
 .indexNumber{
-    background-color: white;
+    color: var(--textColor);
+    background-color: var(--baseColor);
     width: 2em;
     margin: 0 auto;
 }
@@ -36,7 +37,7 @@ span:only-child{
 }
 .arrow{
     color: white;
-    background-color: var(--textColor);
+    background-color: var(--baseColor);
     border: none;
     height: 4em;
 }

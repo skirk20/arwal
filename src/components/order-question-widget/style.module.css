@@ -1,4 +1,8 @@
+*{
+    
+}
 .item2{
+    color: var(--baseColor);
     display: flex;
     align-content: center;
     border-bottom: 1px solid;
@@ -40,7 +44,7 @@ span>img{
 .arrow{
     display: block;
     color: white;
-    background-color: var(--textColor);
+    background:none;
     border: none;
     height: 4em;
     /* width: 5em; */
