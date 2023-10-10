@@ -9,7 +9,7 @@ export default function Page2({onNext}: Props) {
     return <Box>
         <div className={style.mainDiv}>
         <h1>WAZNA INFORMACJA</h1>
-        <p>W schowku przed pasażerem znajduje się Wasz Antyradar RST, który pomoże wam podczas podróży. Znajdźcie go i odpowiedzcie na pierwsze pytanie dzisiejszego wyzwania</p>
+        <p>W schowku przed pasażerem znajduje się Wasz Antyradar RST, który pomoże wam podczas podróży. Znajdźcie go i odpowiedzcie na pierwsze pytania dzisiejszego wyzwania</p>
         <section>
         <ButtonLike>
                 <button onClick={onNext}>DALEJ</button>

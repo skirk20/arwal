@@ -36,6 +36,7 @@ export function GeoInfo({ distance, name, bering }: Props) {
     }, [bering]);
 
     const coordinates = ( geoPoints.find(x=>x.name === name)?.position);
+    const image = (geoPoints.find(x=>x.name === name)?.img);
     return <Box>
     <div className={styles.mainDiv}>
         <div className={styles.inner}>
@@ -46,7 +47,8 @@ export function GeoInfo({ distance, name, bering }: Props) {
                 
             </div>
             kieruj się <strong>{Math.round(distance)}m</strong> na{'\u00A0'}<strong style={{whiteSpace: 'nowrap'}}>{direction}</strong><br />
-            współrzędne geograficzne: {coordinates?.lat+ ', ' + coordinates?.lng}
+            współrzędne geograficzne: {coordinates?.lat+ ', ' + coordinates?.lng} <br />
+            {image && <img src={image} alt="qr" className={styles.qrInfo}/>}
         </div>
     </div>
     </Box>

@@ -25,7 +25,7 @@ export default function RulesPage() {
                 </ul>
             </li>
             <li>Na przejście gry macie 3,5 godziny - po upływie tego czasu kierujcie się od razu do punktu finałowego, nawet jeśli nie udało Wam się ukończyć wszystkich zadań.</li>
-            <li>Gra opiera się na geolokalizacji - aby wyświetlić zadanie musicie znaleźć się w pobliżu punktu do którego nawigujecie. Cześć punktów wymaga od Was zatrzymania się w wyznaczonym miejscu, a część odpali się dopiero jak przejedziecie przez punkt o wskazanych współrzędnych.</li>
+            <li>Gra opiera się na geolokalizacji - aby wyświetlić zadanie musicie znaleźć się w pobliżu punktu do którego nawigujecie. Cześć punktów wymaga od Was zatrzymania się w wyznaczonym miejscu, a część odpali się jak przejedziecie przez punkt o wskazanych współrzędnych.</li>
             <li>UWAGA!!! Bezpieczeństwo ma pierwszeństwo, dlatego, jeżeli stwierdzicie, że w wyznaczonym punkcie nie można się bezpiecznie zatrzymać to kontynuujcie jazdę i zatrzymajcie się w bezpiecznym miejscu aby wykonać zadanie.</li>
         </ol>
 

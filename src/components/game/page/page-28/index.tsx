@@ -9,7 +9,7 @@ export default function Page25({onNext}: Props) {
     return <Box>
         <div className={style.mainDiv}>
         <h1>UWAGA</h1>
-        <p>Właśnie wjechaliście na najwyższe wzniesienie Wzgórz Dylewskich i jednocześnie całej północno-wschodniej Polski. Znajdujecie się na wysokości ponad 300 metrów npm, w księdze podróży odpowiedzcie na pytania dotyczące jak Wasz samochód sprawdza się na górskich odcinkach.</p>
+        <p>Właśnie wjechaliście na najwyższe wzniesienie Wzgórz Dylewskich i jednocześnie całej północno-wschodniej Polski. Znajdujecie się na wysokości ponad 300 metrów npm, jak Wasz samochód sprawdza się na górskich odcinkach.</p>
         <section>
         <ButtonLike>
                 <button onClick={onNext}>DALEJ</button>

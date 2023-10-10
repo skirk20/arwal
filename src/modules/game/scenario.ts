@@ -12,7 +12,8 @@ export const SCENARIO: GameScenario = {
                 
             },
             name: ['Punkt geo 1'],
-            nextStep: '1.2'
+            nextStep: '1.2',
+            img: 'qr1.png',
         },
         {
             id: '1.2',
@@ -61,8 +62,9 @@ export const SCENARIO: GameScenario = {
                 lng: 20.628665850188753
                 
             },
-            name: ['Punkt geo 1'],
-            nextStep: '2.2'
+            name: ['Punkt geo 2'],
+            nextStep: '2.2',
+            img: 'qr2.png',
         },
         {
             id: '2.2',
@@ -93,8 +95,9 @@ export const SCENARIO: GameScenario = {
                 lat: 51.02386,
                 lng: 16.9263
             },
-            name: ["Punkt geo 2"],
-            nextStep: '3.2'
+            name: ["Punkt geo 3"],
+            nextStep: '3.2',
+            img: 'qr3.png',
         },
         {
             id:"3.2",
@@ -112,10 +115,10 @@ export const SCENARIO: GameScenario = {
             id: '3.4',
             type: GAME_STEP_TYPE.PAGE,
             pageId: 'page-11', //agenci specjalni
-            nextStep: '4.1'
+            nextStep: '3.5'
         },
         {
-            id: '3.4',
+            id: '3.5',
             type: GAME_STEP_TYPE.PAGE,
             pageId: 'page-12', //tekst
             nextStep: '4.1'
@@ -131,8 +134,9 @@ export const SCENARIO: GameScenario = {
                 lat:51.05019, 
                 lng: 17.02108
             },
-            name: ["Punkt geo 3"],
-            nextStep: '4.2'
+            name: ["Punkt geo 4"],
+            nextStep: '4.2',
+            img: 'qr4.png',
         },
         {
             id: '4.2',
@@ -146,12 +150,6 @@ export const SCENARIO: GameScenario = {
             pageId: 'page-14', //kto ważniejszy
             nextStep: '5.1'
         },
-        {
-            id: '4.3',
-            type: GAME_STEP_TYPE.PAGE,
-            pageId: 'page-15', //tekst
-            nextStep: '5.1'
-        },
 
 
 
@@ -163,8 +161,9 @@ export const SCENARIO: GameScenario = {
                 lat: 51.0155,
                 lng: 16.9408
             },
-            name: ["Punkt geo 4"],
-            nextStep: '5.2'
+            name: ["Punkt geo 5"],
+            nextStep: '5.2',
+            img: 'qr5.png',
         },
         {
             id: '5.2',
@@ -195,8 +194,9 @@ export const SCENARIO: GameScenario = {
                 lat: 51.01866, 
                 lng: 16.91966
             },
-            name: ["Punkt geo 5"],
-            nextStep: '6.2'
+            name: ["Punkt geo 6"],
+            nextStep: '6.2',
+            img: 'qr6.png',
         },
         {
             id: '6.2',
@@ -233,8 +233,9 @@ export const SCENARIO: GameScenario = {
                 lat: 50.9828,
                 lng: 17.00291
             },
-            name: ["Punkt geo 6"],
-            nextStep: '7.2'
+            name: ["Punkt geo 7"],
+            nextStep: '7.2',
+            img: 'qr7.png',
         },
         {
             id: '7.2',
@@ -277,8 +278,9 @@ export const SCENARIO: GameScenario = {
                 lat: 50.99836,
                 lng: 17.00497
             },
-            name: ["Punkt geo 7"],
-            nextStep: '8.2'
+            name: ["Punkt geo 8"],
+            nextStep: '8.2',
+            img: 'qr8.png',
         },
         {
             id: '8.2',

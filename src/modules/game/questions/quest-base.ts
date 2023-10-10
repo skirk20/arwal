@@ -135,7 +135,7 @@ export const QUESTIONS: IQuizQuestion[] = [
         id: '7',
         text: 'Skorzystajcie ponownie z antyradaru  RST. Odnajdźcie, który dział, rozdział, oddział, artykuł, punkt, określa zasady zachowania się kierującego pojazdem wobec pieszego wchodzącego na przejście dla pieszych?',
         imgSrc: img7,
-        description: "",
+        description: "Bardzo ważne by znać te zasady.",
         answers: [{
             id: '1',
             text: 'Dział I, rozdział 4, oddział 2, artykuł 34, punkt 3',
@@ -144,10 +144,10 @@ export const QUESTIONS: IQuizQuestion[] = [
             text: 'Dział II, rozdział 3, oddział 7, artykuł 26, punkt 1',
             isCorrect: true
         },{
-            id: '2',
+            id: '3',
             text: 'Dział II, rozdział 2, oddział 13, artykuł 1'
         },{
-            id: '2',
+            id: '4',
             text: 'Dział I, rozdział 6, oddział 7, artykuł 23, punkt 1'
         },]
     },
