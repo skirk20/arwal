@@ -1,12 +1,12 @@
 .findDiffComponent {
-    top: 0.5em;
+    top: 8vh;
     left: 0;
-    bottom: 1em;
+    // bottom: 1em;
     right: 0;
     background-color: white;
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: inherit;
     // align-items: center;
 
     canvas {

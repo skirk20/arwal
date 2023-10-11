@@ -18,10 +18,10 @@ export default function SummaryPage({onNext}: Props) {
         <h1>Gratulacje!</h1>
         
         <p>znaleźliście <span>{completedGeoPointCount} z {geoPointsCount} </span>zadań<br />
-        opdowiedziałeś poprawnie na <span>{correctQuizQuestionCount} z 14 </span> pytań quizowych</p>
+        opdowiedziałeś poprawnie na <span>{correctQuizQuestionCount} z 9 </span> pytań quizowych</p>
         
         </div>
-        <p className={styles.adress}>kierujcie się do bazy: Hotel Aubrecht Country Spa Resort</p>
+        <p className={styles.adress}>kierujcie się do bazy: Radisson Blu Resort & Conference Center, Ostróda</p>
         </Box>
 }
 

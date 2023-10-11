@@ -106,7 +106,7 @@ export const QUESTIONS: IQuizQuestion[] = [
     {
         id: '5',
         text: 'Czy na tej drodze zawsze macie obowiązek ustąpić pierwszeństwa pieszemu?',
-        imgSrc: img5,
+        imgSrc: img10,
         description: "W strefie ruchu, występują drogi publiczne i przynajmniej jedna z dróg jest drogą wewnętrzną. Administrator sam ustala organizację ruchu na tym obszarze. Może więc uznać, że jedna droga jest drogą z pierwszeństwem, a inna podporządkowaną. W strefie ruchu pieszy będzie miał pierwszeństwo wyłącznie jeśli ruch będzie odbywał się na tych samych płaszczyznach, np. parkingi przed hipermarketami. W pytaniu pojawia się jednak zapytanie “czy zawsze?”. Oczywiście, że nie zawsze.",
         answers: [{
             id: '1',
